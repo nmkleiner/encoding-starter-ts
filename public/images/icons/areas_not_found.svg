@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155.83" height="81.205" viewBox="0 0 155.83 81.205">
+    <defs>
+        <style>
+            .cls-1{fill:rgba(120,132,158,.3);stroke:#202333;fill-rule:evenodd}.cls-2{fill:url(#linear-gradient)}.cls-3{fill:url(#linear-gradient-2)}.cls-4{fill:#78849e}
+        </style>
+        <linearGradient id="linear-gradient" x2="3.361" y1="1" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#78849e" stop-opacity="0"/>
+            <stop offset="1" stop-color="#78849e"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="-2.424" x2="1" y1="1" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#78849e"/>
+            <stop offset="1" stop-color="#78849e" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g id="areasnotfound" data-name="Areas not found" transform="translate(5261 -1853.5)">
+        <g id="noun_Search_2223713_000000" transform="translate(-5237.25 1831.75)">
+            <path id="Path_1892" d="M78.731 70.958l22.622 22.622a3.008 3.008 0 0 1 0 4.285l-3.488 3.488a3.008 3.008 0 0 1-4.285 0L70.958 78.731a31.006 31.006 0 1 1 7.773-7.773zM37.373 37.373a22.409 22.409 0 1 0 31.691 0 22.557 22.557 0 0 0-31.691 0z" class="cls-1" data-name="Path 1892"/>
+        </g>
+        <g id="sensors" transform="translate(-5259 1878)">
+            <path id="Path_40" d="M50.591 11.344a2.068 2.068 0 0 0-1.968 1.456h-3.14V6.615A2.03 2.03 0 0 0 43.467 4.6H29.792a2 2 0 0 0-1.922 1.968v6.182h-3.14a2.062 2.062 0 1 0 0 1.219h3.14v6.181a2.03 2.03 0 0 0 2.015 2.015h13.723A2 2 0 0 0 45.53 20.2v-6.185h3.14a2.061 2.061 0 1 0 1.922-2.671zm-13.914 5.062a3 3 0 0 1-.141-6h.141a3 3 0 0 1 .141 6z" class="cls-2" data-name="Path 40" transform="translate(-22.7 -6.6)"/>
+        </g>
+        <g id="places" transform="translate(-5142 1864)">
+            <path id="Path_45" d="M24.663 79.225c-.317.494-.62.956-.9 1.381A47.767 47.767 0 0 1 33.916 81.8a.184.184 0 0 1 0 .356 54.279 54.279 0 0 1-13 1.237 54.287 54.287 0 0 1-13-1.237.184.184 0 0 1 0-.356 47.767 47.767 0 0 1 10.156-1.192 77.313 77.313 0 0 1-.9-1.381C10.187 79.525 5 80.642 5 81.975c0 1.562 7.125 2.825 15.915 2.825s15.915-1.263 15.915-2.825c0-1.333-5.187-2.45-12.167-2.75z" class="cls-3" data-name="Path 45" transform="translate(0 -47.974)"/>
+            <path id="Path_46" d="M33.25 33.852c1.57-2.207 9.035-13.043 9.035-19.529a9.323 9.323 0 1 0-18.646 0c0 6.487 7.465 17.322 9.035 19.529a.352.352 0 0 0 .575 0zm-5.7-19.529a5.411 5.411 0 1 1 5.411 5.411 5.411 5.411 0 0 1-5.411-5.411z" class="cls-3" data-name="Path 46" transform="translate(-12.047)"/>
+        </g>
+        <g id="noun_polygon_565307_000000" transform="translate(-5207.526 1858.1)">
+            <path id="Path_41" d="M23.535 13.519a2.7 2.7 0 0 1 1.595.526l10.67 7.743a2.719 2.719 0 0 1 .991 3.035l-4.074 12.542a2.709 2.709 0 0 1-2.586 1.874H16.939a2.729 2.729 0 0 1-2.586-1.874l-4.072-12.527a2.689 2.689 0 0 1 .991-3.035l10.668-7.742a2.612 2.612 0 0 1 1.595-.542m0-.619a3.417 3.417 0 0 0-1.966.635L10.9 21.277a3.321 3.321 0 0 0-1.208 3.732l4.073 12.541a3.342 3.342 0 0 0 3.174 2.307h13.177a3.342 3.342 0 0 0 3.174-2.307l4.072-12.542a3.344 3.344 0 0 0-1.208-3.732l-10.668-7.741a3.335 3.335 0 0 0-1.951-.635z" class="cls-4" data-name="Path 41"/>
+            <path id="Path_42" d="M62.742 54.193l-6.72-4.877a1.487 1.487 0 0 0-1.765 0l-6.72 4.877a1.492 1.492 0 0 0-.542 1.672l2.57 7.912a1.5 1.5 0 0 0 1.425 1.037h8.31a1.5 1.5 0 0 0 1.425-1.037l2.57-7.9a1.546 1.546 0 0 0-.553-1.684zm-7.634 3.871a.5.5 0 1 1 .5-.5.489.489 0 0 1-.5.5z" class="cls-4" data-name="Path 42" transform="translate(-31.604 -30.531)"/>
+        </g>
+    </g>
+</svg>

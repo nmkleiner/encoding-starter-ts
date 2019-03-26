@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+    <defs>
+        <style>
+            .cls-1{fill:#3499ff}
+        </style>
+    </defs>
+    <path id="Bars_Burger" d="M1511-2194a1 1 0 0 1-1-1 1 1 0 0 1 1-1h14a1 1 0 0 1 1 1 1 1 0 0 1-1 1zm0-4a1 1 0 0 1-1-1 1 1 0 0 1 1-1h14a1 1 0 0 1 1 1 1 1 0 0 1-1 1zm0-4a1 1 0 0 1-1-1 1 1 0 0 1 1-1h14a1 1 0 0 1 1 1 1 1 0 0 1-1 1z" class="cls-1" data-name="Bars / Burger" transform="translate(-1510 2204)"/>
+</svg>

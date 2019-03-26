@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46.614" height="64" viewBox="0 0 46.614 64">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#098bff"/>
+            <stop offset=".481" stop-color="#00b2ff"/>
+            <stop offset="1" stop-color="#00cfee"/>
+        </linearGradient>
+    </defs>
+    <path id="noun_padlock_1532408_000000" d="M55.6 30.3v-7.878C55.6 14.47 49.578 8 42.173 8s-13.429 6.47-13.429 14.422V30.3a14.5 14.5 0 0 0-9.878 13.736V57.5A14.5 14.5 0 0 0 33.368 72h17.61a14.5 14.5 0 0 0 14.5-14.5V44.031A14.5 14.5 0 0 0 55.6 30.3zm-12 21.754v3.536a1.433 1.433 0 0 1-2.866 0v-3.541a3.908 3.908 0 1 1 2.866 0zm7.548-22.511c-.058 0-.116-.009-.174-.009H33.368c-.058 0-.115.008-.174.009v-7.121c0-5.318 4.028-9.644 8.978-9.644s8.979 4.326 8.979 9.644z" class="cls-1" transform="translate(-18.866 -8)"/>
+</svg>

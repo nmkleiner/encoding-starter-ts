@@ -4,10 +4,12 @@ interface State {
     items: Item[];
     filter: string;
 }
+
 interface Item {
     title: string;
     active: boolean;
 }
+
 export default {
     namespaced: true,
     state: {
@@ -18,7 +20,6 @@ export default {
         items: (state: State) => state.items
             .filter((item) => item.title.toLowerCase().includes(state.filter.toLowerCase()))
             .sort((item1, item2) => +item2.active - +item1.active),
-
     },
     actions: {
         async getItems({commit}: { commit: ({}) => void }) {

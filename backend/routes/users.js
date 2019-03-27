@@ -117,4 +117,4 @@ router.post('/signup', function (req, res) { return __awaiter(_this, void 0, voi
         }
     });
 }); });
-module.exports = router;
+exports.default = router;

@@ -5,11 +5,6 @@ import jwtService from '../keys/JWT.service';
 const User = mongoose.model('users');
 const router = express.Router();
 
-interface User {
-    email: string;
-    password: string;
-}
-
 router.post('/login', async (req, res) => {
     const {email, password} = req.body;
 

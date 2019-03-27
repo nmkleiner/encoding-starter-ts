@@ -14,5 +14,6 @@ const options = apiService.getJwtOptions();
 async function getPlaces() {
     const places = await apiService.axios().post(`${apiService.getUrl()}places`,
         {token, options});
+    console.log('places.data',places.data);
     return places.data;
 }

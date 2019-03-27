@@ -1,20 +1,12 @@
 import deviceService from "../../services/device.service";
 
-interface State {
-    items: Device[];
-}
-interface Device {
-    icon: string;
-    title: string;
-    description: string;
-}
 export default {
     namespaced: true,
     state: {
         items: [],
     },
     getters: {
-        items: (state: State) => state.items,
+        items: (state: DevicesState) => state.items,
     },
     actions: {
         async getItems({commit}: {commit: ({}) => void}) {
@@ -23,7 +15,7 @@ export default {
         },
     },
     mutations: {
-        setDevices(state: State, {devices}: {devices: Device[]}) {
+        setDevices(state: DevicesState, {devices}: {devices: Device[]}) {
             state.items = devices;
         },
     },

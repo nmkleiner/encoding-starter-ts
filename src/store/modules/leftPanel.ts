@@ -2,12 +2,6 @@ import places from './places';
 import areas from './areas';
 import devices from './devices';
 
-interface State {
-    isPanelOpen: boolean;
-    theme: string;
-    filter: string;
-}
-
 export default {
     namespaced: true,
     state: {
@@ -22,7 +16,7 @@ export default {
                 item.description.toLowerCase().includes(state.filter)),
     },
     actions: {
-        setTheme({commit, state}: {commit: ({}) => void, state: State}, {theme}: {theme: string}) {
+        setTheme({commit, state}: {commit: ({}) => void, state: LeftPanelState }, {theme}: {theme: string}) {
             if (theme === 'burger') {
                 state.isPanelOpen ?
                     commit({type: 'closePanel'})
@@ -40,19 +34,19 @@ export default {
         },
         filter({commit}: {commit: ({}) => void}, {filter}: {filter: string}) {
             commit({type: 'setFilter', filter});
-        }
+        },
     },
     mutations: {
-        setTheme(state: State, {theme}: {theme: string}) {
+        setTheme(state: LeftPanelState, {theme}: {theme: string}) {
             state.theme = theme;
         },
-        setFilter(state: State, {filter}: {filter: string}) {
+        setFilter(state: LeftPanelState, {filter}: {filter: string}) {
             state.filter = filter;
         },
-        closePanel(state: State) {
+        closePanel(state: LeftPanelState) {
             state.isPanelOpen = false;
         },
-        openPanel(state: State) {
+        openPanel(state: LeftPanelState) {
             state.isPanelOpen = true;
         },
     },

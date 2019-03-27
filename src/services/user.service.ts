@@ -9,10 +9,6 @@ export default {
 const USER = 'USER';
 const TOKEN = 'TOKEN';
 
-interface LoginData {
-    email: string;
-    password: string;
-}
 
 async function login(loginData: LoginData) {
     const {email, password} = loginData;

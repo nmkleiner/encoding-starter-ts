@@ -55,4 +55,4 @@ router.post('/', function (req, res) { return __awaiter(_this, void 0, void 0, f
         }
     });
 }); });
-module.exports = router;
+exports.default = router;

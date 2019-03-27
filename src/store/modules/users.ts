@@ -1,7 +1,5 @@
 // import userService from "../../services/user.service";
-interface State {
-    loggedInUser: object
-}
+
 export default {
     namespaced: true,
     state: {
@@ -10,7 +8,7 @@ export default {
     actions: {},
     mutations: {
 
-        setLoggedIUser(state: State, user: object) {
+        setLoggedIUser(state: UsersState, user: object) {
             state.loggedInUser = user;
         },
     },

@@ -1,20 +1,13 @@
 import areaService from '../../services/area.service';
 
-interface State {
-    items: Area[];
-}
-interface Area {
-    img: string;
-    title: string;
-    description: string;
-}
+
 export default {
     namespaced: true,
     state: {
         items: [],
     },
     getters: {
-        items: (state: State) => state.items,
+        items: (state: AreasState ) => state.items,
     },
     actions: {
         async getItems({commit}: {commit: ({}) => void}) {
@@ -23,7 +16,7 @@ export default {
         },
     },
     mutations: {
-        setAreas(state: State, {areas}: { areas: Area[] }) {
+        setAreas(state: AreasState , {areas}: { areas: Area[] }) {
             state.items = areas;
         },
     },

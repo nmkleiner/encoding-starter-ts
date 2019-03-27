@@ -1,13 +1,5 @@
 import placeService from '../../services/place.service';
 
-interface State {
-    items: Place[];
-}
-
-interface Place {
-    title: string;
-    description: string;
-}
 
 export default {
     namespaced: true,
@@ -15,7 +7,7 @@ export default {
         items: [],
     },
     getters: {
-        items: (state: State) => state.items,
+        items: (state: PlacesState) => state.items,
     },
     actions: {
         async getItems({commit}: { commit: ({}) => void }) {
@@ -24,7 +16,7 @@ export default {
         },
     },
     mutations: {
-        setPlaces(state: State, {places}: {places: Place[]}) {
+        setPlaces(state: PlacesState, {places}: {places: Place[]}) {
             state.items = places;
         },
     },

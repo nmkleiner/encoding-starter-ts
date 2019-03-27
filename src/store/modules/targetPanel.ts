@@ -1,8 +1,5 @@
 import targets from './targets';
 
-interface State {
-    isOpen: boolean;
-}
 
 export default {
     namespaced: true,
@@ -18,7 +15,7 @@ export default {
         },
     },
     mutations: {
-        togglePanel(state: State) {
+        togglePanel(state: TargetPanelState ) {
             state.isOpen = !state.isOpen;
         },
     },

@@ -1,14 +1,5 @@
 import targetService from '../../services/target.service';
 
-interface State {
-    items: Item[];
-    filter: string;
-}
-
-interface Item {
-    title: string;
-    active: boolean;
-}
 
 export default {
     namespaced: true,
@@ -17,7 +8,7 @@ export default {
         filter: '',
     },
     getters: {
-        items: (state: State) => state.items
+        items: (state: TargetState) => state.items
             .filter((item) => item.title.toLowerCase().includes(state.filter.toLowerCase()))
             .sort((item1, item2) => +item2.active - +item1.active),
     },
@@ -31,10 +22,10 @@ export default {
         },
     },
     mutations: {
-        setTargets(state: State, {targets}: { targets: [] }) {
+        setTargets(state: TargetState, {targets}: { targets: [] }) {
             state.items = targets;
         },
-        setFilter(state: State, {filter}: { filter: string }) {
+        setFilter(state: TargetState, {filter}: { filter: string }) {
             state.filter = filter;
         },
     },

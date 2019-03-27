@@ -41,18 +41,20 @@ var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var mongoose_1 = __importDefault(require("mongoose"));
+var places_service_1 = __importDefault(require("../services/places.service"));
 var Place = mongoose_1.default.model('places');
 var router = express_1.default.Router();
 router.post('/', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
     var places;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, Place.find({})];
+            case 0: return [4 /*yield*/, places_service_1.default.query()];
             case 1:
                 places = _a.sent();
+                // console.log('i\'m running');
                 res.json(places);
                 return [2 /*return*/];
         }
     });
 }); });
-module.exports = router;
+exports.default = router;

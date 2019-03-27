@@ -1,0 +1,40 @@
+@import "base/reset.css";
+//@import "~normalize-scss";
+//@include normalize();
+
+@import "base/config";
+
+// Utils (helpers, functions, mixins and etc..)
+@import "utils/typography";
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import "utils/text";
+@import "utils/retina";
+@import "utils/visually-hidden";
+@import "utils/shapes";
+@import "utils/elements-middle";
+@import "utils/sprites";
+@import "utils/font-face";
+@import "utils/buttons";
+@import "utils/tooltips";
+@import "utils/global";
+@import "utils/imgs";
+@import "utils/mixins";
+@import "utils/helpers";
+
+// Start css (html, body, containers, font and etc..)
+@import "base/vars";
+@import "base/fonts";
+@import "base/transitions";
+@import "components/button-component";
+@import "components/input-component";
+@import "base/scrollbars";
+@import "svg_font/style.css";
+
+//@import "base/tabs";
+@import "pages/radar-page";
+@import "pages/login-page";
+@import "components/radar-page/left-panel";
+@import "components/radar-page/target-panel";
+@import "components/radar-page/target-item";
+@import "components/radar-page/zoom-buttons";
+@import "components/radar-page/scale";

@@ -1,0 +1,60 @@
+.radar-page {
+  .zoom-buttons {
+    @extend %flex-column;
+    justify-content: space-between;
+    width: 40px;
+    height: 104px;
+    box-shadow: 0 0 8px 0 rgba(44, 66, 106, 0.24);
+    margin-top: 16px;
+
+    button {
+      transition: .2s;
+      background-color: white;
+
+      &:hover {
+        background-color: darken(white, 20%);
+      }
+
+      &:first-child {
+        border-radius: 50px 50px 0 0;
+        height: 40px;
+      }
+
+      &:nth-child(2) {
+        height: 24px;
+      }
+    }
+
+    .up-down-wrapper {
+      height: 40px;
+      width: 40px;
+      border-radius: 0 0 40px 40px;
+      background-color: #fff;
+      @extend %flex-column-centered;;
+
+      transition: .2s;
+
+      &:hover {
+        button {
+          background-color: darken(white, 20%);
+        }
+      }
+
+      button {
+        width: 100%;
+
+        &:first-child {
+          height: 20px;
+          border-radius: 0;
+          padding-top: 5px;
+        }
+
+        &:last-child {
+          height: 20px;
+          padding-bottom: 7px;
+          border-radius: 0 0 40px 40px;
+        }
+      }
+    }
+  }
+}

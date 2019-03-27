@@ -54,13 +54,13 @@
 </template>
 
 <script>
-    import {mapActions, mapState} from 'vuex'
-    import ButtonComponent from '../components/shared/ButtonComponent'
-    import ZoomButtons from '../components/radar/ZoomButtons'
-    import Scale from '../components/radar/Scale'
-    import LeftPanel from '../components/radar/LeftPanel'
-    import TargetPanel from '../components/radar/TargetPanel'
-    import userService from '../services/user.service'
+    import {mapActions, mapState} from 'vuex';
+    import ButtonComponent from '../components/shared/ButtonComponent';
+    import ZoomButtons from '../components/radar/ZoomButtons';
+    import Scale from '../components/radar/Scale';
+    import LeftPanel from '../components/radar/LeftPanel';
+    import TargetPanel from '../components/radar/TargetPanel';
+    import userService from '../services/user.service';
 
     export default {
         name: 'radar-page',
@@ -94,7 +94,7 @@
             })
         },
         beforeRouteEnter: async (to, from, next) => {
-            const isLoggedIn = await userService.isLoggedIn()
+            const isLoggedIn = await userService.isLoggedIn();
             if (isLoggedIn) {
                 next()
             } else {

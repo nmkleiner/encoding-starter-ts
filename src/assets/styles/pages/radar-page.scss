@@ -1,0 +1,55 @@
+
+
+html {
+  font-family: Poppins;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+.radar-page {
+  @include rectangle(100vw,100vh);
+  background-image: url($bg-img);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .top-left-buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 205px;
+    min-width: 205px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+
+  .top-right-button {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    .notification {
+      width: 14px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $pink-bg;
+      border: 2px white solid;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+
+  .bottom-left-button {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+  }
+
+
+  .bottom-right-buttons-wrapper {
+    position: absolute;
+    bottom: 64px;
+    right: 24px;
+    @extend %flex-column;
+  }
+}

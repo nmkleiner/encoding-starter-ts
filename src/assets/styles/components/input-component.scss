@@ -1,0 +1,121 @@
+.input-wrapper {
+  position: relative;
+  transition: .3s;
+  &.form-input {
+    input {
+      width: 100%;
+      height: 48px;
+      border: none;
+      border-bottom: 1px solid #78849e;
+      font-size: 1.8rem;
+      transition: .3s;
+
+      &:focus {
+        border-bottom: 1px solid #00cfee;
+        outline: none;
+      }
+
+      &::placeholder {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: #78849e;
+      }
+    }
+
+    &.hasRightIcon {
+      position: relative;
+      @include relative-margin-bottom(24px);
+      @media (min-width: 769px) {
+        @include relative-margin-bottom(31px);
+      }
+
+      i, img {
+        position: absolute;
+        left: calc((335 / 360 * 100%) - 5px);
+        top: 17px;
+        font-size: 18px;
+      }
+
+    }
+
+    .msg-label {
+      font-family: HindSiliguri;
+      font-size: 1.3rem;
+      line-height: 2;
+      color: #dc5968;
+    }
+
+    .floating-placeholder {
+      font-size: 1.6rem;
+      position: absolute;
+      pointer-events: none;
+      left: 10px;
+      top: 18px;
+      transition: .6s ease all;
+
+      &.float {
+        top: 0;
+        left: 0;
+        font-size: 1.2rem;
+        opacity: 1;
+      }
+
+    }
+
+  }
+
+
+  &.filter-input {
+    background-color: #fff;
+    width: 343px / 375px * 100%;
+    max-width: 360px;
+    height: 48px;
+    max-height: 48px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .divider {
+      width: 1px;
+      height: 24px;
+      opacity: 0.12;
+      border-radius: 1px;
+      background-color: #7d85a1;
+    }
+
+    input {
+      border: none;
+      font-size: 1.8rem;
+      width: 100%;
+      margin-left: 9px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        opacity: 0.34;
+        font-size: 1.2rem;
+        line-height: 1.67;
+        color: #1a203a;
+      }
+    }
+
+    .input-left-symbol {
+      margin: 0 20px;
+      font-size: 12px;
+    }
+
+    .input-right-symbol {
+      font-size: 2.2rem;
+      color: #7d85a1;
+      opacity: 0.2;
+      display: block;
+      padding-right: 13px;
+      cursor: pointer;
+    }
+  }
+
+
+}

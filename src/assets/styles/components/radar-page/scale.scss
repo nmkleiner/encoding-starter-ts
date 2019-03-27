@@ -1,0 +1,49 @@
+.radar-page .scale {
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+  width: 275px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(26, 32, 58, 0.3);
+  border-radius: 10px 0 0 10px;
+
+  .coords {
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 10px;
+    margin-right: 7px;
+  }
+
+  span {
+    font-size: 1rem;
+    color: #ffffff;
+
+    &:last-child {
+      padding-left: 12px / 276px * 100%;
+      padding-right: 8px / 276px * 100%;
+    }
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+
+    .bar-vertical {
+      display: inline-block;
+      background-color: #fff;
+      width: 1px;
+      height: 10px;
+    }
+
+    .bar-horizontal {
+      display: inline-block;
+      background-color: #fff;
+      width: 78px;
+      height: 1px;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.radar-page .target-panel li.target-item {
+  @include relative-margin-bottom(16px);
+  width: 344 / 376 * 100%;
+  height: 96px;
+  background-color: darken(#2a2e43,3%);
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+
+  &.inactive {
+    opacity: 0.5;
+    .active-wrapper {
+
+      .active-light {
+        background-color: #78849e;
+      }
+    }
+  }
+
+  &.active {
+    .active-wrapper {
+      span {
+        &:last-of-type {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .vertical-slot {
+    width: 8px;
+    height: 80px;
+    border-radius: 8px;
+    &.high-alert {
+      background-color: #f83a8a;
+    }
+    &.med-alert {
+      background-color: #ffd609;
+    }
+    &.low-alert {
+      background-color: #58cdd8;
+    }
+    &.reference-alert {
+      background-color: #f66951;
+    }
+  }
+  .text-wrapper {
+    @extend %flex-column;
+    height: 100%;
+    padding: 16px 0 22px 24px;
+    justify-content: space-around;
+    .top-wrapper {
+      display: flex;
+
+      .active-wrapper {
+        span:first-of-type {
+          color: #51f69e;
+        }
+
+      }
+      .c-num {
+        margin-left: 21px;
+      }
+    }
+    h3 {
+      opacity: 0.84;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+    span {
+      font-size: 1.2rem;
+      color: #7d85a1;
+    }
+  }
+}

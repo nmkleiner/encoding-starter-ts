@@ -4,7 +4,7 @@
         <Welcome></Welcome>
 
         <section class="login-section">
-            <img class="main-img" src="../../public/images/big-lock.svg"/>
+            <img alt="blue lock" class="main-img" src="../../public/images/big-lock.svg"/>
             <h2>Welcome</h2>
             <p class="sign-in-paragraph">
                 Sign up to manage your fleet and Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -19,8 +19,8 @@
     </div>
 </template>
 <script>
-    import Welcome from '../components/login/Welcome'
-    import Form from '../components/shared/Form'
+    import Welcome from '../components/login/Welcome';
+    import Form from '../components/shared/Form';
     import SignupForm from "../entities/SignupForm";
 
     export default {
@@ -36,13 +36,12 @@
         },
         methods: {
             async signup(signupData) {
-                console.log('res',res)
                 this.form.resetErrorMessages();
                 const res = await this.form.submitSignup(signupData);
                 if (res) {
                     this.$router.push('/login')
                 }
-            }
+            },
         },
-    }
+    };
 </script>

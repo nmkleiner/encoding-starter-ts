@@ -4,7 +4,7 @@
         <Welcome></Welcome>
 
         <section class="login-section">
-            <img class="main-img" src="../../public/images/big-lock.svg"/>
+            <img alt="blue lock" class="main-img" src="../../public/images/big-lock.svg"/>
             <h2>Welcome Back!</h2>
             <p class="sign-in-paragraph">
                 Sign in to manage your fleet and Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -21,9 +21,9 @@
     </div>
 </template>
 <script>
-    import Welcome from '../components/login/Welcome'
-    import Form from '../components/shared/Form'
-    import {mapMutations} from 'vuex'
+    import Welcome from '../components/login/Welcome';
+    import Form from '../components/shared/Form';
+    import {mapMutations} from 'vuex';
     import LoginForm from "../entities/LoginForm";
 
     export default {
@@ -44,8 +44,8 @@
                 this.form.resetErrorMessages();
                 const user = await this.form.submitLogin(loginData);
                 if (user) {
-                    this.setUser(user)
-                    this.$router.push('/')
+                    this.setUser(user);
+                    this.$router.push('/');
                 }
             }
         }

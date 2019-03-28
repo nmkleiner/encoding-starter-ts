@@ -14,13 +14,9 @@
     </div>
 </template>
 <script>
-    // import FormInput from "../../entities/FormInput";
 
     export default {
         props: {
-            /*input : {
-                type: FormInput
-            },*/
             type: String,
             placeholder: String,
             rightIcon: Object,

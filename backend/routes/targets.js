@@ -50,7 +50,6 @@ router.post('/', function (req, res) { return __awaiter(_this, void 0, void 0, f
             case 0: return [4 /*yield*/, Target.find({})];
             case 1:
                 targets = _a.sent();
-                console.log('targets');
                 res.json(targets);
                 return [2 /*return*/];
         }

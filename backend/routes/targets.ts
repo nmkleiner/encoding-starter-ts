@@ -7,7 +7,6 @@ const router = express.Router();
 
 router.post('/', async (req, res) => {
     const targets = await Target.find({});
-    console.log('targets');
     res.json(targets);
 });
 

@@ -35,6 +35,9 @@ export default {
         filter({commit}: {commit: ({}) => void}, {filter}: {filter: string}) {
             commit({type: 'setFilter', filter});
         },
+        query({dispatch}: {dispatch: ({}) => void}, {filter}: {filter: string}) {
+            dispatch({type: 'places/query', filter});
+        },
     },
     mutations: {
         setTheme(state: LeftPanelState, {theme}: {theme: string}) {

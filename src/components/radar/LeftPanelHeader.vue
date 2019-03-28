@@ -31,7 +31,8 @@
         },
         methods: {
             ...mapActions({
-                filter: 'leftPanel/filter'
+                filter: 'leftPanel/filter',
+                query: 'leftPanel/query'
             })
         },
         computed: {
@@ -40,7 +41,11 @@
                     return this.$store.getters['leftPanel/filter']
                 },
                 set(filterBy) {
-                    this.filter({filter: filterBy})
+                    if (this.theme === 'places') {
+                        this.query({filter: filterBy})
+                    } else {
+                        this.filter({filter: filterBy})
+                    }
                 }
             }
         },

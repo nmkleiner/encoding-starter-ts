@@ -40,18 +40,20 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
-var mongoose_1 = __importDefault(require("mongoose"));
+// import mongoose from 'mongoose';
 var places_service_1 = __importDefault(require("../services/places.service"));
-var Place = mongoose_1.default.model('places');
+// const Place = mongoose.model('places');
 var router = express_1.default.Router();
 router.post('/', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
-    var places;
+    var filter, places;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, places_service_1.default.query()];
+            case 0:
+                filter = req.body.filter;
+                console.log('filter', filter);
+                return [4 /*yield*/, places_service_1.default.query(filter)];
             case 1:
                 places = _a.sent();
-                // console.log('i\'m running');
                 res.json(places);
                 return [2 /*return*/];
         }

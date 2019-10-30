@@ -20,7 +20,7 @@
     "cors": "^2.8.5",
     "express-session": "^1.15.6",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.4.20",
+    "mongoose": "^5.7.5",
     "mysql": "^2.16.0",
     "ts-node-dev": "^1.0.0-pre.32"
   }
